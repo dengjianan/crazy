@@ -1,10 +1,10 @@
 var home = {};//默认首页
-home.partial = "app/lib/home.html";
+home.partial = "lib/home.html";
 home.init = function(){//bootstrap method 
 	//nothing but static content only to render
 }
 var notfound = {};
-notfound.partial = "app/lib/404.html";
+notfound.partial = "lib/404.html";
 notfound.init = function(){//404页面
 	alert('URL dose not exist.please check your code.')
 }
@@ -145,6 +145,6 @@ miniSPA.initFunc = function(partial) {                            //execute the 
         fn();
     }
 }
-miniSPA.ajaxRequest('app/lib/404.html', 'GET','',function(status, partial){
+miniSPA.ajaxRequest('../lib/404.html', 'GET','',function(status, partial){
     settings.partialCache.notfound = partial;
 });        //cache 404 page first
