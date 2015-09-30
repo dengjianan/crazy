@@ -31,7 +31,6 @@ miniSPA.changeUrl = function(){//handle url change
 			})
 		}else{
 			settings.divDemo.innerHTML = page;
-            console.log(page);
 			miniSPA.initFunc(url);//load url controller
 		}
 		
