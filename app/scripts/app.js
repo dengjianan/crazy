@@ -1,5 +1,5 @@
 var product = {};
-product.partial = "../lib/product.html"
+product.partial = "lib/product.html"
 product.init = function(){
     // document.getElementById('spinner').style.visibility = 'visible';
     // document.getElementById('content').style.visibility = 'hidden';
@@ -11,7 +11,7 @@ product.init = function(){
     });
 }
 var about = {};
-about.partial = "../lib/about.html"
+about.partial = "lib/about.html"
 about.init = function(){
     miniSPA.ajaxRequest('https://api.github.com/emojis','GET','',function(status, partial){
          miniSPA.render('about');         //render related partial page with data returned from the server
