@@ -31,7 +31,6 @@ miniSPA.changeUrl = function(){//handle url change
 			})
 		}else{
 			settings.divDemo.innerHTML = page;
-            console.log(page);
 			miniSPA.initFunc(url);//load url controller
 		}
 		
@@ -145,6 +144,6 @@ miniSPA.initFunc = function(partial) {                            //execute the 
         fn();
     }
 }
-miniSPA.ajaxRequest('../lib/404.html', 'GET','',function(status, partial){
+miniSPA.ajaxRequest('lib/404.html', 'GET','',function(status, partial){
     settings.partialCache.notfound = partial;
 });        //cache 404 page first
